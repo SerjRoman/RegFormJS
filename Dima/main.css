@@ -1,0 +1,31 @@
+.reg-block{
+    display: flex;
+    align-items: center;
+    border: 0px solid black;
+    border-radius: 7px;
+}
+.main-block{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(80, 253, 45, 1) 100%);
+}
+.input-reg{
+    display: flex;
+    align-items: center;
+}
+.button-reg{
+    display: flex;
+    align-items: center;
+}
+.user-name-tip{
+    opacity: 100%;
+}
+.email-tip {
+    opacity: 100%;
+}
+.pass-word-tip {
+    opacity: 100%;
+}
