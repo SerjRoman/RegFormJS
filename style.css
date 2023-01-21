@@ -1,0 +1,68 @@
+/* звертаємося до всіх об'єктів */
+* {
+    /* задаємо внутрішні відступи 0, зовнішні відступи 0, задаємо коробку-розмір щоб він 
+    враховував значення полів і кордонів для вищитування ширини та висоти  */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Делаем размер на всю страницу и для этого используем html, body */
+html,body {
+    width: 100%;  /* Ширина 100% */
+    height: 100%; /* Высота 100% */
+}
+/*  */
+.wrapper {
+    background: linear-gradient(320deg, #eb92be, #ffff78, #63c9b3);
+    /* градиент */
+    width: 100%; 
+    /*  ширина в процентах */
+    height: 100%; 
+    /*  высота в процентах */
+    display: flex; 
+    /*  указываем что унего дисплей flex бокс */
+    align-items: center;
+    /* задаём центр */
+    justify-content: center;  /*задаём центр для justify*/
+}
+/* регистраційна форма  */
+.reg-form {
+    width: 400px;  /* ширина */
+    height: 500px; /* высота */
+    background: rgba(255, 255, 255, 0.3);     /* задний фон */
+    box-shadow: 0 0 30px rgba(35, 35, 35, 0.6); /* тень */
+    border-radius: 35px; /* сглаживание краев */
+}
+/* Задаем размер для блока регистрации в котором задаем значения */
+.reg-input-block {
+    height: 70%;
+    width: 100%;
+}
+/*  */
+.input-reg {
+    width: 80%; /* width */
+    margin: 5% auto;/* внешний отступ автоматический с 5%*/
+    position: relative;/* based */
+    border: none;/*  */
+    box-shadow:0 0 10px 10px rgba(35, 35, 35, 0.3);/* shadow for block*/
+    border-radius: 16px;/* border with round corners */
+    height: 35px;/* height */
+}
+/* задаем уведомлениям: прозрачность*/
+.notification {
+    opacity: 0;
+    
+}
+/* Задаем настройки кнопки регистрации:
+ ширину,
+ высоту,
+ округляем углы,
+ расположение на экране*/
+.button-reg {
+    width: 130px;
+    height: 40px;
+    border-radius: 16px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}

@@ -1,7 +1,9 @@
+//consts
 const tipFirstDiv = document.createElement('div');
 const tipSecondDiv = document.createElement('div');
 const tipThirdDiv = document.createElement('div');
 const buttonDiv = document.createElement('div');
+const regForm = document.querySelector(".input-reg");
 // username
 tipFirstDiv.innerHTML = "Your username. Don't write your real name. Your username will be visible to all users. For example: Uniboard635"
 tipFirstDiv.style.backgroundColor = 'GreenYellow';
@@ -15,9 +17,13 @@ tipThirdDiv.innerHTML = "Your password. For security, the password will be hidde
 tipFirstDiv.style.backgroundColor = 'LawnGreen';
 tipFirstDiv.className = "password-tip tips";
 // button
-buttonDiv.innerHTML = 'When you click create an account, you will have to verify your email to create it, otherwise, you will have to change your email to one you have access to.' 
-buttonDiv.style.backgroundColor = 'LawnGreen'; 
-buttonDiv.className = "button-tip tips"; 
+buttonDiv.innerHTML = 'When you click create an account, you will have to verify your email to create it, otherwise, you will have to change your email to one you have access to.'
+buttonDiv.style.backgroundColor = 'LawnGreen';
+buttonDiv.className = "button-tip tips";
+//append elements
+regForm.append(tipFirstDiv);
+regForm.append(tipSecondDiv);
+regForm.append(tipThirdDiv);
 //comments
 //const someDiv = document.createElement('div'); //In an HTML document, the document.createElement() method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized.
 //someDiv.innerHTML = "something"; //The Element interface's innerHTML property sets or gets the HTML or XML markup of child elements.
